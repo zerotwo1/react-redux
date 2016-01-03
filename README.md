@@ -1,6 +1,5 @@
 # zerotwo1 redux-react repository
-
-======
+-------
 
 A place to start tinkering when migrating to Redux-React. This entire project may very well only be a reusable and hopefully useful README.md file to light the fire under your teams ass.
 
@@ -25,7 +24,7 @@ Code the main app architecture with Redux-React with Go & Node and socket based 
 Let the front-end implement something sweet like the [material-ui react component library](http://www.material-ui.com/#/components/app-bar) and include some uses cases of some of the more opinionated mircoframeworks such as immutable.js. Write all JS in ES6/Babel and share!
 
 > [Demo App - airing now](http://3db5fb2b.ngrok.com)
-> Grokking the app we will be building, check it on your phone then check it on your laptop, tell me what you see.
+> Grokking the app we will be building, check it on your phone then check it on your laptop, tell me what you see and I'll do the same.
 
 ### PART ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
 
@@ -62,6 +61,12 @@ A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postg
 
 ``` ACTION: fire up the servers and test them, be sure they're running, open them in the browser with bash ```
 
+``` docker build -t zerotwo1 . ```
+``` docker run zerotwo1/redux-react cowsay boo-boo ```
+
+-- docker should spin up something like this:
+
+``` goserver on: localhost:5000, redis que on: localhost:5005, nodesocket on: localhost:5010, RDS on: 102.31.32.12:5015, etc ```
 
 ### PART TWO - IMPLEMENT A CODE ARCHITECTURE via YO
 + I like Redux/React right now. But maybe you're still on FLUX or even Angular or Backbone. We will use YO to pick your poison.
