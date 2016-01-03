@@ -112,26 +112,24 @@ Redux Thunk | [Github](https://github.com/gaearon/redux-thunk)
 - Make building the local environment super easy and implement hotloading with linting
 
 ### PART THREE - MAKE AN APP (OR STEAL ONE MUAHAHAHAHAAHAHA)
-+ Reverse engineer the sound-redux app because that's what a real hacker would do. Build functionality into it. Currently, I have noticed that this amazing app:
+Reverse engineer the sound-redux app because that's what a real hacker would do. Build functionality into it. Currently, I have noticed that this amazing app:
 
 - Doesn't allow you to share an individual track
 - Doesn't allow you to manipulate the stores data
 - Doesn't say Franchino anywhere when I send them this native feeling app in the browser
 - Doesn't have an adserver displaying my recent Readme file updates
 - Sound-Redux could use a couple pull requests from me. Will investigate whether I can wire the iOS player overlay can pass next to the Redux front end or if that's just not possible
-- Sound-Redux could use a track overlay of sorts
-- Sound-Redux could use a take_selfie button for every track
-- Sound-Redux might like material-ui, it might not
+- Could use a track overlay of sorts
+- Could use a take_selfie button for every track
+- Might like material-ui, it might not
 
 > ESSAY: The Future of the Mobile Web
-
---- Consider https://github.com/ipselon/material-ui-prepack
 
 ##### EXTRA CREDIT
 
 - Create a three.js or d3.js visualization component to visualize the music, might require a beast of a processor
 
-``` Run the app in the browser ```
+``` Implement offline processing with a socket notification when ready but also design the user experience so it's fast enough to be in sync with the track and it's timeline. ```
 
 ### PART FOUR
 
@@ -139,9 +137,9 @@ Redux Thunk | [Github](https://github.com/gaearon/redux-thunk)
 
 ``` Run the dev tools, lint etc ```
 
-> ESSAY: Is testing an application that implements a REACT component library with single points of data access overkill? If not, what should we test?
+> ESSAY: Is testing an application that implements a REACT component library with single points of data access overkill? If not, what should we test? I'm sometimes happy just testing my endpoints and using something like [airbrake-js](https://github.com/airbrake/airbrake-js)
 
-### PART FIVE
-- Bring in Phant and AWS IoT just because
+### PART FIVE (ONLY FOR THE WICKED)
+- Bring in [Phant](https://github.com/sparkfun/phant), [AWS IoT](https://github.com/aws/aws-iot-device-sdk-js) and something from the [Watson Developer Cloud](https://github.com/watson-developer-cloud)
 
 
