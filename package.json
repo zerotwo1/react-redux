@@ -1,0 +1,17 @@
+{
+  "name": "Franchino",
+  "version": "0.0.1",
+  "email": "franchino@problemspaces.com",
+  "url": "https://twitter.com/franchescino",
+  "description": "A place to start tinkering when migrating to Redux-React.",
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20.3"
+  }
+}
