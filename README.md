@@ -2,7 +2,7 @@
 
 ======
 
-A place to start tinkering when migrating to Redux-React.
+A place to start tinkering when migrating to Redux-React. This entire project may very well only be a reusable and hopefully useful README.md file to light the fire under your teams ass.
 
 > Contact <franchino@problemspaces.com> for expert advice if your team wants to bite this bullet. Tweet at me if you got beef [@franchescino](https://twitter.com/franchescino).
 
@@ -22,10 +22,10 @@ Code the main app architecture with Redux-React with Go & Node and socket based 
 
 > ESSAY: Patterns for Redux
 
-Let the front-end implement something hot like the material-ui react component library and include some uses cases of some of the more opinionated mircoframeworks such as immutable.js. Write all JS in ES6/Babel.
+Let the front-end implement something sweet like the [material-ui react component library](http://www.material-ui.com/#/components/app-bar) and include some uses cases of some of the more opinionated mircoframeworks such as immutable.js. Write all JS in ES6/Babel and share!
 
 > [Demo App - airing now](http://3db5fb2b.ngrok.com)
-> Grokking from my machine Demo App TTFB super slow :p
+> Grokking the app we will be building, check it on your phone then check it on your laptop, tell me what you see.
 
 ### PART ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
 
@@ -33,7 +33,7 @@ Let the front-end implement something hot like the material-ui react component l
 
 > ESSAY: Noops expectations with Redux, Zero21
 
-> After some research and careful consideration I am going with Empire. Empire is a control layer on top of Amazon EC2 Container Service (ECS) that provides a Heroku like workflow. It conforms to a subset of the Heroku Platform API, which means you can use the same tools and processes that you use with Heroku, but with all the power of EC2 and Docker.
+> After some fast research and consideration I am going with Empire. Empire is a control layer on top of Amazon EC2 Container Service (ECS) that provides a Heroku like workflow. It conforms to a subset of the Heroku Platform API, which means you can use the same tools and processes that you use with Heroku, but with all the power of EC2 and Docker.
 
 > ESSAY: Using Empire & EC2 in place of Heroku, but keep heroku CLI tools
 
