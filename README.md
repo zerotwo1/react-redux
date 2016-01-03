@@ -140,6 +140,13 @@ Reverse engineer the sound-redux app because that's what a real hacker would do.
 > ESSAY: Is testing an application that implements a REACT component library with single points of data access overkill? If not, what should we test? I'm sometimes happy just testing my endpoints and using something like [airbrake-js](https://github.com/airbrake/airbrake-js)
 
 ### PART FIVE (ONLY FOR THE WICKED)
+
+Some of this may or may not make sense to you. Just pushing the limits of webapps to the max here.
+
 - Bring in [Phant](https://github.com/sparkfun/phant), [AWS IoT](https://github.com/aws/aws-iot-device-sdk-js) and something from the [Watson Developer Cloud](https://github.com/watson-developer-cloud)
+
+- Bring in HelloEnjoys' [Unity to Three.js Project](helloenjoy.com/2013/from-unity-to-three-js/) and generate a 3D object with webgl and manipulate it via a JSON interface. Let this perhaps be the foundation of a 60fps blessed child. See the penny [skateboard customizer experience](http://customiser.pennyskateboards.com/us/) on laptop and phone.
+
+- Compile everyting to react-native with JavaScriptCore in iOS and compile everything for iOS and Android native app experiences. "Learn once, write anywhere" as the React devs say. Test this early and often when going through this project. ABC - Always Be Compiling
 
 
