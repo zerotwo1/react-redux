@@ -1,39 +1,31 @@
-var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var devFlagPlugin = new webpack.DefinePlugin({
-  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
-});
+
+function getEntrySources(sources) {
+    if (process.env.NODE_ENV !== 'production') {
+        sources.push('webpack-dev-server/client?http://localhost:8080');
+        sources.push('webpack/hot/only-dev-server');
+    }
+
+    return sources;
+}
+
+var ignore = new webpack.IgnorePlugin(/\.svg$/)
 
 module.exports = {
-  devtool: 'eval',
-  entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    './src/index'
-  ],
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    devFlagPlugin,
-    new ExtractTextPlugin('app.css')
-  ],
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src')
-      },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('css-loader?module!cssnext-loader') }
-    ]
-  },
-  resolve: {
-    extensions: ['', '.js', '.json']
-  }
+    entry: {
+        main: getEntrySources([
+            './scripts/main.js'
+        ])
+    },
+    output: {
+        publicPath: 'http://localhost:8080/',
+        filename: '/js/[name].js'
+    },
+    module: {
+        loaders: [
+            { test: /\.js$/, loaders: ['react-hot', 'jsx', 'babel'], exclude: /node_modules/ },
+            { test: /\.scss$/, loaders: ['style', 'css', 'sass'] }
+        ]
+    },
+    plugins: [ignore]
 };
