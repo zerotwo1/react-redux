@@ -1,23 +1,16 @@
 {
-  "name": "Franchino",
-  "version": "0.0.2",
-  "email": "franchino@problemspaces.com",
-  "url": "https://twitter.com/franchescino",
-  "description": "A place to start tinkering when migrating to Redux-React.",
-  "main": "index.js",
+  "name": "react-hot-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:zerotwo1/react-redux.git"
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
   },
-  "scripts": {
-    "start": "webpack-dev-server"
-  },
-  "files": [
-    "app",
-    "router"
-  ],
   "keywords": [
-    "yeoman-generator",
     "react",
     "reactjs",
     "boilerplate",
@@ -28,26 +21,12 @@
     "edit",
     "webpack"
   ],
-  "dependencies": {
-    "babel": "^6.3.26",
-    "babel-core": "^6.4.0",
-    "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "react": "latest",
-    "react-dom": "latest",
-    "webpack": "^1.12.10",
-    "webpack-dev-server": "^1.14.0",
-    "yeoman-generator": "^0.20.3",
-    "lodash": "^3.10.1",
-    "react-redux": "latest",
-    "redux": "latest",
-    "classnames": "^2.1.3"
-  },
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
   "bugs": {
-    "url": "git@github.com:zerotwo1/react-redux.git/issues"
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
   },
-  "homepage": "git@github.com:zerotwo1/react-redux.git",
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
   "devDependencies": {
     "babel-core": "^5.8.3",
     "babel-eslint": "^4.0.5",
@@ -63,5 +42,12 @@
     "style-loader": "^0.12.3",
     "webpack": "^1.9.6",
     "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "lodash": "^3.10.1",
+    "react": "^0.13.0",
+    "react-redux": "^0.2.2",
+    "redux": "^1.0.0-rc"
   }
 }
