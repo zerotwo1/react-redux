@@ -4,8 +4,27 @@
 }
 
 .container {
-    width: 1170px;
-    margin: 0 auto;
+    margin: 0 25px;
+}
+
+@media screen and (min-wdth: 768px) {
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }   
+
+}
+
+@media screen and (min-wdth: 992px) {
+    .container {
+        width: 900px;
+    }       
+}
+
+@media screen and (min-wdth: 1200px) {
+    .container {
+        width: 1170px;
+    }   
 }
 
 .clearfix:after {

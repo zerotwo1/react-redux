@@ -8,18 +8,22 @@
     clear: both;
 }
 
-.col-1-5 {
-    width: 20%;
-}
+@media screen and (min-width: 480px) {
+	
+	.col-1-5 {
+	    width: 20%;
+	}
 
-[class*='col-'] {
-    float: left;
-    min-height: 1px;
-}
+	[class*='col-'] {
+	    float: left;
+	    min-height: 1px;
+	}
 
-[class*='col-'] {
-    padding-right: 20px;
-}
-[class*='col-']:last-of-type {
-    padding-right: 0;
+	[class*='col-'] {
+	    padding-right: 20px;
+	}
+	[class*='col-']:last-of-type {
+	    padding-right: 0;
+	}
+
 }
