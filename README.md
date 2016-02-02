@@ -20,6 +20,7 @@ Create a painless starter with a 12factor no-ops environment with Docker+Git and
 Code the main app architecture with Redux-React with both Go & Node socket based server workers. Use Yo to generate the project and webpack to build it. Once the code is in place, walk through the development of some components in an ongoing series or reverse engineer sound-redux.
 
 > ESSAY: Patterns for Redux
+[Getting Started w/ Redux](https://egghead.io/series/getting-started-with-redux)
 
 Let the front-end implement something sweet like the [material-ui react component library](http://www.material-ui.com/#/components/app-bar) and include some uses cases of some of the more opinionated mircoframeworks such as immutable.js. Write all JS in ES6/Babel and share!
 
